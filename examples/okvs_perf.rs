@@ -13,8 +13,6 @@ struct Arguments {
     n: usize,
     #[arg(short, long, default_value_t = 0.0)]
     epsilon: f64,
-    #[arg(short = 't', long, default_value_t = 65536)]
-    num_threads: usize,
     
     /// See the Appendix F of BPSY23 paper for the choice of width.
     /// eps = 0.03, n = 65536, width = 570
